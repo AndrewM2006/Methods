@@ -192,7 +192,7 @@ namespace Methods
             return randomNumbers;
         }
         ///<summary>
-        ///This method returns a string with the letters reversed.
+        ///This method returns a reversed word.
         ///</summary>
         ///<param name="word"> A string value of the word before it is reversed.</param>
         ///<returns>A string value of the reversed string.</returns>
@@ -202,6 +202,154 @@ namespace Methods
             Array.Reverse(charArray);
             return new string(charArray);
         }
-
+        ///<summary>
+        ///This method returns the number of real roots of a quadratic equation.
+        ///</summary>
+        ///<param name="a"> A double value of the "a" value of the quadratic equation.</param>
+        ///<param name="b"> A double value of the "b" value of the quadratic equation.</param>
+        ///<param name="c"> A double value of the "c" value of the quadratic equation.</param>
+        ///<returns>An int value of the number of real roots in the quadratic equation.</returns>
+        public static int RootChecker (double a, double b, double c)
+        {
+            if (b * b - 4 * a * c == 0)
+            {
+                return 1;
+            }
+            else if (b * b - 4 * a * c > 0)
+            {
+                return 2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        ///<summary>
+        ///This method returns the circumference of a circle.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the circle.</param>
+        ///<returns>A double value of the circumference of the circle.</returns>
+        public static double Circumference(double radius)
+        {
+            return 2 * Math.PI * radius;
+        }
+        ///<summary>
+        ///This method returns the area of a triangle.
+        ///</summary>
+        ///<param name="b"> A double value of the base of the triangle.</param>
+        ///<param name="h"> A double value of the height of the triangle.</param>
+        ///<returns>A double value of the area of the triangle.</returns>
+        public static double TriangleArea(double b, double h)
+        {
+            return b * h / 2;
+        }
+        ///<summary>
+        ///This method returns the area of a parallelogram.
+        ///</summary>
+        ///<param name="b"> A double value of the base of the parallelogram.</param>
+        ///<param name="h"> A double value of the height of the parallelogram.</param>
+        ///<returns>A double value of the area of the parallelogram.</returns>
+        public static double ParallelogramArea(double b, double h)
+        {
+            return b * h;
+        }
+        ///<summary>
+        ///This method returns the area of a trapezoid.
+        ///</summary>
+        ///<param name="b1"> A double value of the top length of the trapezoid.</param>
+        ///<param name="b2"> A double value of the bottom length of the trapezoid.</param>
+        ///<param name="h"> A double value of the height of the trapezoid.</param>
+        ///<returns>A double value of the area of the trapezoid.</returns>
+        public static double TrapezoidArea(double b1, double b2, double h)
+        {
+            return (b1 + b2) / 2 * h;
+        }
+        ///<summary>
+        ///This method returns the area of a circle.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the circle.</param>
+        ///<returns>A double value of the area of the circle.</returns>
+        public static double CircleArea(double radius)
+        {
+            return Math.PI * radius * radius;
+        }
+        ///<summary>
+        ///This method returns the area of a rectangle.
+        ///</summary>
+        ///<param name="l"> A double value of the length of the rectangle.</param>
+        ///<param name="w"> A double value of the width of the rectangle.</param>
+        ///<returns>A double value of the area of the rectangle.</returns>
+        public static double RectangleArea(double l, double w)
+        {
+            return l * w;
+        }
+        ///<summary>
+        ///This method returns the surface area of a cone.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the cone.</param>
+        ///<param name="height"> A double value of the height of the cone.</param>
+        ///<returns>A double value of the surface area of the cone.</returns>
+        public static double ConeSurfaceArea(double radius, double height)
+        {
+            return Math.PI * radius * (radius + Math.Sqrt(height * height + radius * radius));
+        }
+        ///<summary>
+        ///This method returns the surface area of a cylinder.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the cylinder.</param>
+        ///<param name="height"> A double value of the height of the cylinder.</param>
+        ///<returns>A double value of the surface area of the cylinder.</returns>
+        public static double CylinderSurfaceArea(double radius, double height)
+        {
+            return 2 * Math.PI * radius * height + 2 * Math.PI * radius * radius;
+        }
+        ///<summary>
+        ///This method returns the surface area of a sphere.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the sphere.</param>
+        ///<returns>A double value of the surface area of the sphere.</returns>
+        public static double SphereSurfaceArea(double radius)
+        {
+            return 4 * Math.PI * radius * radius;
+        }
+        ///<summary>
+        ///This method returns the volume of a sphere.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the sphere.</param>
+        ///<returns>A double value of the volume of the sphere.</returns>
+        public static double SphereVolume(double radius)
+        {
+            return 4/3 * Math.PI * radius * radius * radius;
+        }
+        ///<summary>
+        ///This method returns the volume of a cylinder.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the cylinder.</param>
+        ///<param name="height"> A double value of the height of the cylinder.</param>
+        ///<returns>A double value of the volume of the cylinder.</returns>
+        public static double CylinderVolume(double radius, double height)
+        {
+            return Math.PI * radius * radius * height;
+        }
+        ///<summary>
+        ///This method returns the volume of a cone.
+        ///</summary>
+        ///<param name="radius"> A double value of the radius of the cone.</param>
+        ///<param name="height"> A double value of the height of the cone.</param>
+        ///<returns>A double value of the volume of the cone.</returns>
+        public static double ConeVolume(double radius, double height)
+        {
+            return Math.PI * radius * radius * height / 3;
+        }
+        ///<summary>
+        ///This method returns the volume of a pyramid.
+        ///</summary>
+        ///<param name="basearea"> A double value of the area of the base of the pyramid.</param>
+        ///<param name="height"> A double value of the height of the pyramid.</param>
+        ///<returns>A double value of the volume of the pyramid.</returns>
+        public static double PyramidVolume(double basearea, double height)
+        {
+            return basearea / 3 * height;
+        }
     }
 }
