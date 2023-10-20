@@ -168,7 +168,7 @@ namespace Methods
         {
             Random generator = new Random();
             List<int> randomNumbers = new List<int>();
-            for (int i = 0; i <= count; i++)
+            for (int i = 1; i <= count; i++)
             {
                 randomNumbers.Add(generator.Next(min, max));
             }
