@@ -23,42 +23,42 @@ namespace Methods
                 if (menuOption == "1")
                 {
                     Console.WriteLine("Enter each leg of the triangle...");
-                    Console.WriteLine(MyMethods.GetHypotenuse(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the hypotenuse.");
+                    Console.WriteLine(MyMethods.GetHypotenuse(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the hypotenuse.");
                 }
                 else if (menuOption == "2")
                 {
                     Console.WriteLine("Enter a leg of the triangle, and then the hypotenuse...");
-                    Console.WriteLine(MyMethods.GetLeg(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the other leg.");
+                    Console.WriteLine(MyMethods.GetLeg(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the other leg.");
                 }
                 else if (menuOption == "3")
                 {
                     Console.WriteLine("Enter each Y coordinate...");
-                    Console.WriteLine(MyMethods.GetRise(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the  rise.");
+                    Console.WriteLine(MyMethods.GetRise(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the  rise.");
                 }
                 else if (menuOption == "4")
                 {
                     Console.WriteLine("Enter each X coordinate...");
-                    Console.WriteLine(MyMethods.GetRun(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the run.");
+                    Console.WriteLine(MyMethods.GetRun(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the run.");
                 }
                 else if (menuOption == "5")
                 {
                     Console.WriteLine("Enter the X and then Y coordinate of the first and then the second point (4 individual lines)...");
-                    Console.WriteLine(MyMethods.GetDistance(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the distance.");
+                    Console.WriteLine(MyMethods.GetDistance(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the distance.");
                 }
                 else if (menuOption == "6")
                 {
                     Console.WriteLine("Enter the X and then Y coordinate of the first and then the second point (4 individual lines)...");
-                    Console.WriteLine(MyMethods.GetSlope(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the slope.");
+                    Console.WriteLine(MyMethods.GetSlope(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the slope.");
                 }
                 else if (menuOption == "7")
                 {
                     Console.WriteLine("Enter the slope of the line, then the X and then the Y coordinate on the line...");
-                    Console.WriteLine(MyMethods.GetYIntercept(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) + " is the y intercept.");
+                    Console.WriteLine(MyMethods.GetYIntercept(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the y intercept.");
                 }
                 else if (menuOption == "8")
                 {
                     Console.WriteLine("Enter the length of each side of the traingle, from smallest to largest...");
-                    if (MyMethods.IsRight(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())) == true)
+                    if (MyMethods.IsRight(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) == true)
                     {
                         Console.WriteLine("The triangle is right angled");
                     }
@@ -88,63 +88,78 @@ namespace Methods
                 }
                 else if (menuOption == "11")
                 {
-                    
+                    Console.WriteLine("Enter the word to be reversed...");
+                    Console.WriteLine(MyMethods.Reverse(Console.ReadLine()));
                 }
                 else if (menuOption == "12")
                 {
-                    
+                    Console.WriteLine("Enter the a value then the b then the c of the equation...");
+                    Console.WriteLine(MyMethods.RootChecker(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the number of real roots.");
                 }
                 else if (menuOption == "13")
                 {
-                    
+                    Console.WriteLine("Enter the radius of the circle");
+                    Console.WriteLine(MyMethods.Circumference(Convert.ToDouble(Console.ReadLine())) + " is the circumference of the circle.");
                 }
                 else if (menuOption == "14")
                 {
-
+                    Console.WriteLine("Enter a base length and then a height...");
+                    Console.WriteLine(MyMethods.TriangleArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the area of the triangle.");
                 }
                 else if (menuOption == "15")
                 {
-
+                    Console.WriteLine("Enter a base length and then a height...");
+                    Console.WriteLine(MyMethods.ParallelogramArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the area of the parallelogram.");
                 }
                 else if (menuOption == "16")
                 {
-
+                    Console.WriteLine("Enter the top base length, then the bottom base length and then a height...");
+                    Console.WriteLine(MyMethods.TrapezoidArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the area of the trapezoid.");
                 }
                 else if (menuOption == "17")
                 {
-
+                    Console.WriteLine("Enter the radius of the circle");
+                    Console.WriteLine(MyMethods.CircleArea(Convert.ToDouble(Console.ReadLine())) + " is the area of the circle.");
                 }
                 else if (menuOption == "18")
                 {
-
+                    Console.WriteLine("Enter a length and then a width...");
+                    Console.WriteLine(MyMethods.RectangleArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the area of the rectangle.");
                 }
                 else if (menuOption == "19")
                 {
-
+                    Console.WriteLine("Enter a radius length and then a height...");
+                    Console.WriteLine(MyMethods.ConeSurfaceArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the surface area of the cone.");
                 }
                 else if (menuOption == "20")
                 {
-
+                    Console.WriteLine("Enter a radius length and then a height...");
+                    Console.WriteLine(MyMethods.CylinderSurfaceArea(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the surface area of the cylinder.");
                 }
                 else if (menuOption == "21")
                 {
-
+                    Console.WriteLine("Enter the radius of the sphere");
+                    Console.WriteLine(MyMethods.SphereSurfaceArea(Convert.ToDouble(Console.ReadLine())) + " is the surface area of the sphere.");
                 }
                 else if (menuOption == "22")
                 {
-
-                }
-                else if (menuOption == "23")
-                {
-
+                    Console.WriteLine("Enter a radius length and then a height...");
+                    Console.WriteLine(MyMethods.CylinderVolume(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the volume of the cylinder.");
                 }
                 else if (menuOption == "24")
                 {
-
+                    Console.WriteLine("Enter a radius length and then a height...");
+                    Console.WriteLine(MyMethods.ConeVolume(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the volume of the cone.");
+                }
+                else if (menuOption == "22")
+                {
+                    Console.WriteLine("Enter the radius of the sphere");
+                    Console.WriteLine(MyMethods.SphereVolume(Convert.ToDouble(Console.ReadLine())) + " is the volume of the sphere.");
                 }
                 else if (menuOption == "25")
                 {
-
+                    Console.WriteLine("Enter the area of the base and then the height of the pyramid");
+                    Console.WriteLine(MyMethods.PyramidVolume(Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())) + " is the volume of the pyramid.");
                 }
                 else if (menuOption == "Q" || menuOption == "q")
                 {
